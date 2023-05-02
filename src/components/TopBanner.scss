@@ -1,0 +1,50 @@
+@import '../scss/colors.scss';
+.top-banner{
+    position: relative;
+    z-index: 1;
+    padding: .5rem;
+    background-color: $lightgray;
+    color: $dirtygray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-contents{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    left: -60px;
+
+    img{
+        cursor: pointer;
+    }
+}
+
+.right-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    left: 30px;
+}
+
+.email,.schedule{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    img{
+        height: 100%;
+    }
+}
+
+span{
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight:lighter;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}

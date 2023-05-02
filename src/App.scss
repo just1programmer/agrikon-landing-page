@@ -1,0 +1,60 @@
+@import './scss/colors.scss';
+.app{
+    min-height: 100vh;
+    background: url('./assets/main-slider.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+main{
+    margin-top: 8%;
+    margin-left: 10%;
+  
+    min-width: 520px;
+    max-width: 520px;
+
+    h2{
+        font-family: 'Poppins',cursive;
+        font-size: 16px;
+        color: white;
+    }
+
+    h1{
+        font-family: 'Dosis',cursive;
+        font-size: 86px ;
+        padding-top: 1rem;
+        color: white;    
+    }
+
+    p{
+        padding-top: 2rem;
+        color: white;
+        font-family: 'Poppins';
+    }
+
+button{
+        background-color: $paleorange;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins';
+        padding: .5rem 1rem;
+        border-radius: .3rem;
+        gap:.5rem;
+        border: none;
+        color: white;
+        transition: 1s all ease;
+        margin-top: 2rem;
+        font-weight: bold;
+        &:hover{
+            transform: scale(1.05);
+            background-color: $forestgreen;
+            box-shadow: 0px 0px 15px $paleorange;
+        }
+    }
+}
+
+
+ 

@@ -1,0 +1,87 @@
+@import '../scss/colors.scss';
+nav{
+    max-height: 137px;
+    background-color: white;
+    position: relative;
+    
+    img{
+        cursor: pointer;
+    }
+
+    svg{
+        position: absolute;
+        top: -20px;
+        
+    }
+
+    .container{
+        padding: 1.5rem 2rem;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+
+            li{
+                font-family: 'Poppins';
+                cursor: pointer;
+       
+                a{
+                    color: $dirtygray;
+                    text-decoration: none;
+                    transition: .15s all ease;
+                    &:hover{ 
+                      color: $forestgreen;
+                      border-bottom: 2px solid rgb(22, 68, 27);
+                    }
+                }
+              
+            }
+        }
+    }
+
+
+    .cart_and_button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+
+    }
+    button{
+        background-color: $paleorange;
+        font-family: 'Poppins';
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        gap:.5rem;
+        border: none;
+        color: white;
+        transition: 1s all ease;
+        & .btn-text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+        &:hover{
+            transform: scale(1.05);
+            background-color: $forestgreen;
+            box-shadow: 0px 0px 15px $paleorange;
+        }
+    }
+}
+ 
